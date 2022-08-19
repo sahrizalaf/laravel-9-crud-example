@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 Route::prefix('todos')->group(function() {
     Route::get('/', [TodoController::class, 'index'])->name('todo.index');
-    Route::get('/{todo}', [TodoController::class, 'show'])->name('todo.show');
+    Route::get('/detail/{todo}', [TodoController::class, 'show'])->name('todo.show');
     Route::get('/create', [TodoController::class, 'create'])->name('todo.create');
     Route::post('/create', [TodoController::class, 'store'])->name('todo.store');
     Route::get('/edit/{todo}', [TodoController::class, 'edit'])->name('todo.edit');

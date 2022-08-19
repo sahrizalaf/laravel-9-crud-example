@@ -5,7 +5,7 @@
 	</div>
 
 	<div class="d-flex">
-		<h2>Section title</h2>
+		<h2>Todo Items</h2>
 		<div class="ms-auto">
 				<a href="{{ route('todo.create') }}" class="btn btn-primary btn-sm">Add New Todo</a>
 		</div>
